@@ -10,7 +10,13 @@ app.get("/", (c) => {
     html`<!DOCTYPE html>
       <h1 style="text-align: center;">
         Your IP address is : ${info.remote.address}
-      </h1>`
+      </h1>
+      </br>
+       <pre style="text-align: center;">
+        Port is : ${info.remote.port}
+        Protocol is : ${info.remote.transport}
+       </pre>
+      `
   );
 });
 
